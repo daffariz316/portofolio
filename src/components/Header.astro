@@ -1,0 +1,55 @@
+---
+const navLinks = [
+  { href: '/', text: 'Home' },
+  { href: '/Resume', text: 'Resume' },
+  { href: '/Projects', text: 'Projects' },
+  { href: '/Contact', text: 'Contact' },
+];
+---
+<header class="bg-white dark:bg-gray-800 text-amber-600 dark:text-amber-400 p-4 shadow-sm border-b">
+  <nav class="container mx-auto flex justify-between items-center">
+    <!-- Logo dan Judul -->
+    <div class="flex items-center">
+      <img src="/logo1.jpg" alt="Logo" class="w-12 h-12 mr-4" />
+      <h1 class="text-xl font-bold">My Portfolio</h1>
+    </div>
+
+    <!-- Tombol Hamburger untuk Mobile -->
+    <button
+      id="menu-toggle"
+      class="lg:hidden text-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-400"
+    >
+      <i id="menu-icon" class="fas fa-bars text-2xl"></i>
+    </button>
+
+    <!-- Navigation Links -->
+    <ul
+      id="nav-links"
+      class="flex-col lg:flex-row lg:flex lg:space-x-6 absolute lg:static top-16 lg:top-auto left-0 w-full lg:w-auto bg-white dark:bg-gray-800 shadow lg:shadow-none transition-all duration-300 hidden"
+    >
+      {navLinks.map(link => (
+        <li class="border-b lg:border-none">
+          <a
+            href={link.href}
+            class="block px-4 py-2 lg:px-0 text-sm font-medium hover:underline hover:text-gray-600 dark:hover:text-gray-300 transition"
+          >
+            {link.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Tombol Mode Gelap -->
+    <button
+      id="dark-mode-toggle"
+      class="ml-2 p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-400"
+    >
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+</header>
+<script src="/js/script.js" defer></script>
+
+
+
+
