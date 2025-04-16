@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+  {
+    name: 'Yuma Laundry',
+    image: '/pro.png',
+    link: 'https://github.com/daffariz316/Project_Laundry',
+    category: 'Website',
+  },
+  {
+    name: 'Bue cookies and pastry',
+    image: '/pro2.png',
+    link: 'https://github.com/daffariz316/bue-web',
+    category: 'Website',
+  },
+  {
+    name: '3DIFY - Aset 3D Blender',
+    image: '/pro4.png',
+    link: 'https://github.com/daffariz316/3dfiy_e-commerce',
+    category: 'Website',
+  },
+  {
+    name: 'Capture to pdf',
+    image: '/pro3.png',
+    link: 'https://github.com/daffariz316/capture-to-pdf',
+    category: 'Others',
+  }
+];
+---
+
+<BaseLayout>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h1 class="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text leading-tight py-2">
+      Project Showcase
+    </h1>
+
+    <!-- Website Section -->
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6">Website</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.filter(p => p.category === 'Website').map((project) => (
+        <a href={project.link} target="_blank" class="group bg-gradient-to-br from-[#2e026d] to-[#15162c] p-[2px] rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+          <div class="bg-white dark:bg-black rounded-xl overflow-hidden">
+            <img src={project.image} alt={project.name} class="w-full h-48 sm:h-56 object-cover rounded-t-xl" />
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white group-hover:text-indigo-500 transition-colors duration-300">
+                {project.name}
+              </h3>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- UI/UX Section -->
+    <h2 class="text-3xl font-semibold mt-8 mb-4">UI/UX</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1);"
+          width="100%"
+          height="450"
+          src="https://embed.figma.com/proto/zuferHTmoIUm1U7oi0r9ti/Ui-ux-bue?node-id=199-147&p=f&scaling=scale-down&content-scaling=fixed&page-id=199%3A89&starting-point-node-id=199%3A147&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Others Section -->
+    <h2 class="text-2xl sm:text-3xl font-bold mt-16 mb-6">Others</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.filter(p => p.category === 'Others').map((project) => (
+        <a href={project.link} target="_blank" class="group bg-gradient-to-br from-[#ff0080] to-[#7928ca] p-[2px] rounded-xl shadow-xl transition-transform duration-300 hover:scale-[1.02]">
+          <div class="bg-white dark:bg-black rounded-xl overflow-hidden">
+            <img src={project.image} alt={project.name} class="w-full h-48 sm:h-56 object-cover rounded-t-xl" />
+            <div class="p-4">
+              <h3 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white group-hover:text-pink-500 transition-colors duration-300">
+                {project.name}
+              </h3>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

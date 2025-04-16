@@ -1,0 +1,182 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="text-center px-4 md:px-8">
+    <h1 class="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text leading-tight py-2">
+      Tech Timeline
+    </h1>
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <button class="tab-button bg-gradient-to-r from-purple-600 to-blue-500  text-white px-3 py-1 rounded-md w-32 sm:w-auto" data-tab="education">
+        Education
+      </button>
+      <button class="tab-button bg-gray-700 text-white px-3 py-1 rounded-md w-32 sm:w-auto" data-tab="experience">
+        Experience
+      </button>
+      <button class="tab-button bg-gray-700 text-white px-3 py-1 rounded-md w-32 sm:w-auto" data-tab="achievement">
+        Achievement
+      </button>
+      <button class="tab-button bg-gray-700 text-white px-3 py-1 rounded-md w-32 sm:w-auto" data-tab="publication">
+        Publication
+      </button>
+    </div>
+    
+    <!-- Education Section -->
+    <section class="tab-content education hidden relative space-y-6">
+      <h2 class="text-2xl font-semibold mb-4"><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+      
+      <!-- Vertical Line Connector -->
+      <div class="absolute left-1/2 top-16 transform -translate-x-1/2 h-[150px] border-l-2 border-gray-300"></div>
+
+      <!-- Education Items -->
+      <div class="relative max-w-md mx-auto bg-white dark:bg-white shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100">
+        <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+        <p class="text-sm text-gray-400 dark:text-black">2022 - 2026 (Expected)</p>
+        <h3 class="text-lg font-bold dark:text-black">IPB University</h3>
+        <p class="dark:text-black">Bachelor of Applied Computer</p>
+        <p class="dark:text-black">B.A.Comp, Software Engineering Technology</p>
+      </div>
+
+      <div class="relative max-w-md mx-auto bg-white dark:bg-white shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100">
+        <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+        <p class="text-sm text-gray-400 dark:text-black">2019 - 2022</p>
+        <h3 class="text-lg font-bold dark:text-black ">SMK Taruna Bangsa Bekasi</h3>
+        <p class="dark:text-black">Diploma of Education</p>
+        <p class="dark:text-black">Software Engineering</p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="tab-content experience hidden relative space-y-6">
+      <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-briefcase mr-2"></i>Experience</h2>
+
+      <!-- Vertical Line Connector -->
+      <div class="absolute left-1/2 top-16 transform -translate-x-1/2 h-[530px] border-l-2 border-gray-300"></div>
+
+     <!-- Experience Item 1 -->
+    <div class="relative max-w-md mx-auto bg-white dark:bg-white shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100">
+      <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+      <p class="text-sm text-gray-400 dark:text-black">January 2024 - June 2024</p>
+      <h3 class="text-lg font-bold dark:text-black">Member of WebMaster</h3>
+      <p class="dark:text-black">Himavo Micro IT</p>
+      <p class="dark:text-black">Part Time - Hybrid</p>
+    </div>
+    <!-- Experience Item 2 -->
+    <div class="relative max-w-md mx-auto bg-white dark:bg-white  shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100">
+      <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+      <p class="text-sm text-gray-400 dark:text-black">February 2024 - March 2024</p>
+      <h3 class="text-lg font-bold dark:text-black">Staff Of PDD || Upgrading 2024</h3>
+      <p class="dark:text-black">Himavo Micro IT</p>
+      <p class="dark:text-black">Part Time - Online</p>
+    </div>
+
+    <!-- Experience Item 3 -->
+    <div class="relative max-w-md mx-auto bg-white dark:bg-white shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100">
+      <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+      <p class="text-sm text-gray-400 dark:text-black">April 2023 - May 2023</p>
+      <h3 class="text-lg font-bold dark:text-black">Staff Of PDD || MTE Micro IT 2023</h3>
+      <p class="dark:text-black">Himavo Micro IT</p>
+      <p class="dark:text-black">Full Time - Offline</p>
+    </div>
+    <!-- Experience Item 4 -->
+    <div class="relative max-w-md mx-auto bg-white dark:bg-white  shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100">
+      <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500  rounded-full border-2 border-white"></div>
+      <p class="text-sm text-gray-400 dark:text-black">October 2022 - December 2023</p>
+      <h3 class="text-lg font-bold dark:text-black">Member of Software Hardware and Network</h3>
+      <p class="dark:text-black">Himavo Micro IT</p>
+      <p class="dark:text-black">Part Time - Online</p>
+    </div>
+
+    <!-- Experience Item 5 -->
+    <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-cogs mr-2"></i>Working</h2>
+    <div class="relative max-w-md mx-auto bg-white dark:bg-white shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100">
+      <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+      <p class="text-sm text-gray-400 dark:text-black">September 2020 - December 2020</p>
+      <h3 class="text-lg font-bold dark:text-black ">Digital Marketing</h3>
+      <p class="dark:text-black">Digiclass Indonesia</p>
+      <p class="dark:text-black">Part Time - Online</p>
+    </div>
+
+
+      <!-- Add more experience items here... -->
+    </section>
+
+    <!-- Achievement Section -->
+    <section class="tab-content achievement hidden relative">
+      <!-- Vertical Line Connector -->
+      <div class="absolute left-1/2 top-12 bottom-8 transform -translate-x-1/2 border-l-2 border-gray-300 z-0"></div>
+    
+      <h2 class="text-2xl font-semibold mb-4 z-10 relative">
+        <i class="fas fa-trophy mr-2"></i>Achievement
+      </h2>
+    
+      <!-- Card 1 -->
+      <div class="relative max-w-md mx-auto bg-white dark:bg-white shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100 z-10 mb-8">
+        <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+        <h3 class="text-lg font-bold dark:text-black">Finalist</h3>
+        <p class="dark:text-black">
+          Business Plan Competition Brawijaya Business And Career Universitas Brawijaya Kediri 2023
+          "Prepare Young Enterpreneurs for the Revolution 5.0"
+        </p>
+      </div>
+    
+      <!-- Card 2 -->
+      <div class="relative max-w-md mx-auto bg-white dark:bg-white shadow-lg p-4 rounded-md transform scale-95 transition duration-300 hover:scale-100 z-10 mb-8">
+        <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-2 h-4 w-4 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full border-2 border-white"></div>
+        <h3 class="text-lg font-bold dark:text-black">Finalist</h3>
+        <p class="dark:text-black">Business Plan Competition at the MP EXPO 2023 event</p>
+      </div>
+    </section>
+    
+
+    <!-- Publication Section -->
+    <section class="tab-content publication hidden">
+      <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-book mr-2"></i>Publication</h2>
+      <!-- Publication Item -->
+      <div class="max-w-md mx-auto bg-white dark:bg-white p-6 border-2 border-gray-300 rounded-lg shadow-lg mb-6">
+        <p class="text-lg font-bold  mb-4 dark:text-black"><span class="italic text-sm ">Analyzing The Potential of ChatGPT to Support Learning</span></p>
+        <a href="https://ejournal.akademitelkom.ac.id/j_ict/index.php/j_ict/article/view/322" target="_blank">
+          <button class="px-6 py-2 mt-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            View Publication
+          </button>
+        </a>
+      </div>
+      <!-- Add more publication items here... -->
+       <!-- Publication Item 2 -->
+      <div class="max-w-md mx-auto bg-white dark:bg-white p-6 border-2 border-gray-300 rounded-lg shadow-lg mb-6">
+        <p class="text-lg font-bold mb-4 dark:text-black ">Perancangan dan Pengembangan Platform Kursus Coding Berbasis Digital untuk Mendukung Pembelajaran Teknologi</p>
+        <a href="https://journal.aritekin.or.id/index.php/Jupiter/article/view/639" target="_blank">
+          <button class="px-6 py-2 mt-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            View Publication
+          </button>
+        </a>
+      </div>
+
+      <!-- Publication Item 3 -->
+      <div class="max-w-md mx-auto bg-white dark:bg-white p-6 border-2 border-gray-300 rounded-lg shadow-lg mb-6">
+        <p class="text-lg font-bold  mb-4 dark:text-black">Penerapan Klasifikasi Gambar Buah dalam Aplikasi FruityLens Menggunakan Metode CNN</p>
+        <a href="https://ifrelresearch.org/index.php/jusiik-widyakarya/article/view/4275" target="_blank">
+          <button class="px-6 py-2 mt-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            View Publication
+          </button>
+        </a>
+      </div>
+
+      <div class="max-w-md mx-auto bg-white dark:bg-white p-6 border-2 border-gray-300 rounded-lg shadow-lg mb-6">
+        <p class="text-lg font-bold  mb-4 dark:text-black">Blackbox Testing of the Garuda Farm Website Using the Equivalence Partitioning Technique</p>
+        <a href="https://jurnal.umnu.ac.id/index.php/kst/article/view/1420" target="_blank">
+          <button class="px-6 py-2 mt-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            View Publication
+          </button>
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <!-- Include external JavaScript for handling tabs -->
+  <script type="module" src="/js/tab.js?v=1.0"></script>
+</BaseLayout>
+

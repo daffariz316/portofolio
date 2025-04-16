@@ -1,0 +1,5 @@
+@tailwind base;    /* Reset dan dasar-dasar styling */
+@tailwind components; /* Komponen prebuilt Tailwind */
+@tailwind utilities;  /* Utility classes Tailwind */
+
+

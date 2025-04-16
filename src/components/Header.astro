@@ -1,0 +1,68 @@
+---
+const navLinks = [
+  { href: '/', text: 'Home' },
+  { href: '/Resume', text: 'Tech Timeline' },
+  { href: '/Projects', text: 'Project Showcase' },
+  { href: '/Contact', text: 'Contact' },
+];
+---
+<header class="fixed top-0 z-50 w-full border-b bg-white/80 dark:bg-black/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-black/60">
+  <nav class="container mx-auto flex h-16 items-center justify-between px-4">
+    <!-- Logo -->
+    <div class="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+      DRZ &reg;
+    </div>
+    <!-- Desktop Nav -->
+    <ul id="desktop-nav-links" class="hidden lg:flex space-x-6 text-sm font-medium">
+      {navLinks.map(link => (
+        <li>
+          <a
+            href={link.href}
+            class="hover:underline hover:text-gray-600 dark:hover:text-gray-300 transition"
+          >
+            {link.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <!-- Action Buttons -->
+    <div class="flex items-center gap-2">
+      <!-- Dark mode toggle -->
+      <button
+        id="dark-mode-toggle"
+        class="p-2 rounded bg-gray-200 dark:bg-black text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-400"
+      >
+        <i class="fas"></i>
+      </button>
+      <!-- Hamburger -->
+      <button
+        id="menu-toggle"
+        class="lg:hidden focus:outline-none focus:ring-2 focus:ring-amber-400"
+      >
+        <i
+          id="menu-icon"
+          class="fas fa-bars text-2xl bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text"
+        ></i>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile nav links -->
+  <ul
+    id="mobile-nav-links"
+    class="lg:hidden hidden flex-col space-y-2 px-4 pb-4 text-sm font-medium"
+  >
+    {navLinks.map(link => (
+      <li class="border-b">
+        <a
+          href={link.href}
+          class="block py-2 hover:underline hover:text-gray-600 dark:hover:text-gray-300 transition"
+        >
+          {link.text}
+        </a>
+      </li>
+    ))}
+  </ul>
+</header>
+
+<!-- Script -->
+<script src="/js/script.js?v=1.0" defer></script>
