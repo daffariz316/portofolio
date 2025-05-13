@@ -5,121 +5,121 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout>
   <!-- Hero Section with Animated Background -->
   <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Animated Background Gradient -->
-    <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-800 via-purple-700 to-blue-600 opacity-90">
-      <div class="absolute inset-0 bg-[url('/noise.svg')] opacity-20"></div>
-    </div>
-    
-    <!-- Animated Shapes -->
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-      <div class="absolute top-20 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-      <div class="absolute -bottom-40 left-20 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-    </div>
+  <!-- Animated Background Gradient -->
+  <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-800 via-purple-700 to-blue-600 opacity-90">
+    <div class="absolute inset-0 bg-[url('/noise.svg')] opacity-20"></div>
+  </div>
+  
+  <!-- Animated Shapes -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-60 sm:w-80 h-60 sm:h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+    <div class="absolute top-20 -left-40 w-60 sm:w-80 h-60 sm:h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-40 left-20 w-60 sm:w-80 h-60 sm:h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+  </div>
 
-    <!-- Content Container -->
-    <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
-      <!-- Text Content -->
-      <div class="w-full md:w-3/5 text-center md:text-left">
-        <p class="text-lg md:text-xl font-extrabold bg-gradient-to-r from-blue-200 to-white text-transparent bg-clip-text mb-2">Hey, I'm</p>
-        
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
-          <span class="bg-gradient-to-r from-blue-200 to-purple-200 text-transparent bg-clip-text">Daffarizqy</span>
-        </h1>
-        
-        <p class="text-lg text-blue-100 mb-8 max-w-xl">
-          A passionate junior backend developer building efficient solutions and beautiful web experiences.
-        </p>
-        
-        <!-- Social Media Icons -->
-        <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
-          <a href="https://x.com/DPrastowiy58704" target="_blank" 
-             class="flex justify-center items-center w-12 h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
-            <i class="fab fa-twitter text-xl"></i>
-          </a>
-          <a href="https://github.com/daffariz316" target="_blank" 
-             class="flex justify-center items-center w-12 h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
-            <i class="fab fa-github text-xl"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/daffarizqy-prastowiyono/" target="_blank" 
-             class="flex justify-center items-center w-12 h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
-            <i class="fab fa-linkedin-in text-xl"></i>
-          </a>
-          <a href="mailto:daffarizqyprastowiyono@gmail.com" target="_blank" 
-             class="flex justify-center items-center w-12 h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
-            <i class="fas fa-envelope text-xl"></i>
-          </a>
-          <a href="https://www.facebook.com/daffarizqyp.daffarizqyp/" target="_blank" 
-             class="flex justify-center items-center w-12 h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
-            <i class="fab fa-facebook-f text-xl"></i>
-          </a>
-        </div>
-        
-        <!-- CV Download Button (Unchanged as requested) -->
-        <div class="flex justify-center md:justify-start">
-          <a href="/document/Profile.pdf" download="CV-Daffarizqy-Prastowiyono.pdf" class="relative inline-flex items-center px-5 py-3 text-white font-medium text-[17px] bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-400 rounded-lg shadow-[0_0.7em_1.5em_-0.5em_rgba(59,48,78,0.5)] transition-all duration-200 hover:shadow-[0_0.5em_1.5em_-0.5em_#3b82f6] hover:rounded-tl-[40px] hover:rounded-br-[40px] group">
-            <!-- Garis kiri -->
-            <span class="absolute left-0 w-1 h-2/5 bg-white dark:bg-white rounded-r-md transition-all duration-200 group-hover:h-3/5 group-hover:-translate-y-3 group-hover:rotate-45"></span>
-
-            <!-- Garis kanan -->
-            <span class="absolute right-0 w-1 h-2/5 bg-white dark:bg-white rounded-l-md transition-all duration-200 group-hover:h-3/5 group-hover:translate-y-3 group-hover:rotate-45"></span>
-
-            <!-- Icon Font Awesome -->
-            <i class="fas fa-download text-white text-lg mr-2"></i>
-            
-            <span>Curriculum Vitae</span>
-          </a>
-        </div>
+  <!-- Content Container -->
+  <div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+    <!-- Text Content -->
+    <div class="w-full md:w-3/5 text-center md:text-left">
+      <p class="text-lg md:text-xl font-extrabold bg-gradient-to-r from-blue-200 to-white text-transparent bg-clip-text mb-2">Hey, I'm</p>
+      
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white mb-4 tracking-tight leading-tight break-words hyphens-auto">
+        <span class="bg-gradient-to-r from-blue-200 to-purple-200 text-transparent bg-clip-text">Daffarizqy</span>
+      </h1>
+      
+      <p class="text-base sm:text-lg text-blue-100 mb-6 sm:mb-8 max-w-xl mx-auto md:mx-0">
+        A passionate junior backend developer building efficient solutions and beautiful web experiences.
+      </p>
+      
+      <!-- Social Media Icons -->
+      <div class="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3 mb-6 sm:mb-8">
+        <a href="https://x.com/DPrastowiy58704" target="_blank" 
+           class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
+          <i class="fab fa-twitter text-lg sm:text-xl"></i>
+        </a>
+        <a href="https://github.com/daffariz316" target="_blank" 
+           class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
+          <i class="fab fa-github text-lg sm:text-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/daffarizqy-prastowiyono/" target="_blank" 
+           class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
+          <i class="fab fa-linkedin-in text-lg sm:text-xl"></i>
+        </a>
+        <a href="mailto:daffarizqyprastowiyono@gmail.com" target="_blank" 
+           class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
+          <i class="fas fa-envelope text-lg sm:text-xl"></i>
+        </a>
+        <a href="https://www.facebook.com/daffarizqyp.daffarizqyp/" target="_blank" 
+           class="flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 hover:scale-110 transition duration-300">
+          <i class="fab fa-facebook-f text-lg sm:text-xl"></i>
+        </a>
       </div>
       
-      <!-- Profile Card -->
-      <div class="w-full md:w-2/5 mt-12 md:mt-0">
-        <div class="relative mx-auto w-64 h-64 perspective-1000">
-          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-600 via-blue-500 to-cyan-400 p-1 shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
-            <div class="inset-0 rounded-xl bg-white dark:bg-gray-900 p-6 shadow-md [backface-visibility:hidden] flex items-center justify-center">
-              <img src="/portfolio-image.jpg" alt="Portfolio image" class="w-full h-auto rounded-lg object-cover" />
-            </div>
-            <div class="absolute inset-0 rounded-xl bg-white dark:bg-gray-900 p-6 shadow-md [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center">
-              <h3 class="text-xl font-bold text-gray-800 dark:text-white">Daffarizqy Prastowiyono</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Backend Developer | Frontend Enthusiast | Data Analysis Explorer</p>
-            </div>
+      <!-- CV Download Button -->
+      <div class="flex justify-center md:justify-start">
+        <a href="/document/Profile.pdf" download="CV-Daffarizqy-Prastowiyono.pdf" class="relative inline-flex items-center px-4 sm:px-5 py-2.5 sm:py-3 text-white font-medium text-sm sm:text-base md:text-[17px] bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-400 rounded-lg shadow-[0_0.7em_1.5em_-0.5em_rgba(59,48,78,0.5)] transition-all duration-200 hover:shadow-[0_0.5em_1.5em_-0.5em_#3b82f6] hover:rounded-tl-[40px] hover:rounded-br-[40px] group">
+          <!-- Garis kiri -->
+          <span class="absolute left-0 w-1 h-2/5 bg-white dark:bg-white rounded-r-md transition-all duration-200 group-hover:h-3/5 group-hover:-translate-y-3 group-hover:rotate-45"></span>
+
+          <!-- Garis kanan -->
+          <span class="absolute right-0 w-1 h-2/5 bg-white dark:bg-white rounded-l-md transition-all duration-200 group-hover:h-3/5 group-hover:translate-y-3 group-hover:rotate-45"></span>
+
+          <!-- Icon Font Awesome -->
+          <i class="fas fa-download text-white text-base sm:text-lg mr-2"></i>
+          
+          <span>Curriculum Vitae</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Profile Card -->
+    <div class="w-full max-w-xs sm:max-w-sm md:w-2/5 mt-8 md:mt-0 mx-auto md:mx-0">
+      <div class="relative w-full perspective-1000">
+        <div class="aspect-square rounded-2xl bg-gradient-to-br from-purple-600 via-blue-500 to-cyan-400 p-1 shadow-xl transition-all duration-500 [transform-style:preserve-3d] hover:[transform:rotateY(180deg)]">
+          <div class="inset-0 rounded-xl bg-white dark:bg-gray-900 p-3 sm:p-4 md:p-6 shadow-md [backface-visibility:hidden] flex items-center justify-center">
+            <img src="/profile.jpg" alt="Portfolio image" class="w-full h-full rounded-lg object-cover" />
+          </div>
+          <div class="absolute inset-0 rounded-xl bg-white dark:bg-gray-900 p-3 sm:p-4 md:p-6 shadow-md [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center">
+            <h3 class="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-white">Daffarizqy Prastowiyono</h3>
+            <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-300 text-center mt-2">Backend Developer | Frontend Enthusiast | Data Analysis Explorer</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
   <!-- About Me Section with Parallax Effect -->
-  <section class="relative py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
+  <section class="relative py-10 sm:py-16 md:py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
     <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute -top-40 -left-40 w-80 h-80 bg-purple-200 dark:bg-purple-900 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
-      <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-blue-200 dark:bg-blue-900 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+      <div class="absolute -top-40 -left-40 w-60 sm:w-80 h-60 sm:h-80 bg-purple-200 dark:bg-purple-900 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+      <div class="absolute -bottom-40 -right-40 w-60 sm:w-80 h-60 sm:h-80 bg-blue-200 dark:bg-blue-900 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
     </div>
     
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text mb-4">
+        <div class="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text mb-4">
             About Me
           </h2>
-          <div class="h-1 w-24 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto rounded-full"></div>
+          <div class="h-1 w-16 sm:w-24 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto rounded-full"></div>
         </div>
         
         <div class="bg-white dark:bg-gray-800 shadow-xl rounded-2xl overflow-hidden backdrop-blur-sm border border-gray-100 dark:border-gray-700">
-          <div class="p-6 md:p-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-              <div class="flex justify-center">
-                <img src="/portfolio-image.jpg" alt="Portfolio image"
-                    class="w-64 h-auto rounded-xl shadow-lg object-cover hover:scale-105 transition duration-300 rotate-3 hover:rotate-0 border-4 border-white dark:border-gray-700" />
+          <div class="p-4 sm:p-6 md:p-8 lg:p-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-center">
+              <div class="flex justify-center order-2 md:order-1">
+                <img src="/profile.jpg" alt="Portfolio image"
+                    class="w-48 sm:w-56 md:w-64 h-auto rounded-xl shadow-lg object-cover hover:scale-105 transition duration-300 rotate-3 hover:rotate-0 border-4 border-white dark:border-gray-700" />
               </div>
-              <div>
-                <h3 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-6">
+              <div class="order-1 md:order-2">
+                <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-4 sm:mb-6">
                   Who Am I?
                 </h3>
-                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">
                   I am a final-year student aspiring to become a skilled Backend and Frontend web developer. I have hands-on experience developing web apps using Laravel and MySQL, and also desktop apps with VB.net. I've explored data analysis with R Studio and Python.
                 </p>
-                <p class="text-gray-600 dark:text-gray-300">
+                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                   Currently, I'm diving into Astro.js and learning advanced backend technologies and cloud computing. I also love reading tech blogs and working on personal projects.
                 </p>
               </div>
@@ -129,7 +129,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </div>
   </section>
-
   <!-- Skills Section with Animated Cards -->
   <section class="py-20 bg-white dark:bg-gray-800">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -294,7 +293,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <!-- Data Analysis -->
         <div>
           <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-8 text-center md:text-left">Data Analysis</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div class="group">
               <div class="relative h-48 bg-gradient-to-br from-cyan-100 to-blue-50 dark:from-cyan-900 dark:to-blue-900 rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 group-hover:-rotate-1">
                 <div class="absolute inset-0 bg-white dark:bg-gray-800 m-1 rounded-lg flex flex-col items-center justify-center p-6">
@@ -309,6 +308,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <div class="absolute inset-0 bg-white dark:bg-gray-800 m-1 rounded-lg flex flex-col items-center justify-center p-6">
                   <i class="fab fa-python text-5xl text-green-600 mb-4 transition-transform duration-300 group-hover:scale-110"></i>
                   <p class="font-medium text-gray-800 dark:text-gray-200">Python</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group">
+              <div class="relative h-48 bg-gradient-to-br from-cyan-100 to-blue-50 dark:from-cyan-900 dark:to-blue-900 rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 group-hover:-rotate-1">
+                <div class="absolute inset-0 bg-white dark:bg-gray-800 m-1 rounded-lg flex flex-col items-center justify-center p-6">
+                  <i class="fas fa-brain text-5xl text-purple-600 mb-4 transition-transform duration-300 group-hover:scale-110"></i>
+                  <p class="font-medium text-gray-800 dark:text-gray-200">Machine Learning</p>
+                </div>
+              </div>
+            </div>
+             <div class="group">
+              <div class="relative h-48 bg-gradient-to-br from-cyan-100 to-blue-50 dark:from-cyan-900 dark:to-blue-900 rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:scale-105 group-hover:-rotate-1">
+                <div class="absolute inset-0 bg-white dark:bg-gray-800 m-1 rounded-lg flex flex-col items-center justify-center p-6">
+                  <i class="fas fa-network-wired text-5xl text-purple-600 mb-4 transition-transform duration-300 group-hover:scale-110"></i>
+                  <p class="font-medium text-gray-800 dark:text-gray-200">Deep Learning</p>
                 </div>
               </div>
             </div>
